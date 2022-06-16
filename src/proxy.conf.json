@@ -1,0 +1,14 @@
+{
+  "/ISteamApps": {
+    "target": "https://api.steampowered.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/api": {
+    "target": "https://store.steampowered.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

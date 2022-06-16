@@ -1,0 +1,9 @@
+<div class="navbar">
+  <a routerLink="home"> 
+    <h3 class="navbar-link">Games</h3>
+  </a>
+  <a routerLink="cart">  
+    <h3 class="navbar-link" [matBadge]="addedGamesTotal$ | async" [matBadgeHidden]="!(addedGamesTotal$ | async)">Cart</h3>
+  </a>
+  <h3 class="navbar-link">Search</h3>
+</div>

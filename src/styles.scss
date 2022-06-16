@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/variables';
+@import 'assets/scss/navbar';
+@import 'assets/scss/typing';
+@import 'assets/scss/fonts';
+@import 'assets/scss/store';
+@import 'assets/scss/grid';
+
+html, body { height: 100%; }
+
+body {
+  font-family: 'Oswald';
+  background-color: $background;
+  color: $text-main;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 32px;
+  padding-top: 0;
+  max-width: 1440px;
+  .page {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,28 @@
+<ng-container *ngIf="games.length else emptyCart" >
+  <table class="cart-table mt-24">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let game of games">
+        <td>
+          <img [src]="game.thumb" alt="">
+        </td>
+        <td class="t-center">{{ game.title }}</td>
+        <td class="t-center">{{ game.salePrice | currency }}</td>
+        <td><mat-icon class="delete-btn" (click)="removeGameFromCart(game.gameID)">delete_outline</mat-icon></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 class="t-center mt-20">Your total is {{ gamesSum | currency}}</h3>
+</ng-container>
+
+
+<ng-template #emptyCart>
+  <h2 class="t-center mt-24">Your cart is empty</h2>
+</ng-template>

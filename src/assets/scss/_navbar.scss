@@ -1,0 +1,23 @@
+.navbar {
+  max-width: 20vw;
+  min-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  border-top: 0;
+  border-radius: 0 0 100% 100%;
+  padding: 30px;
+  padding-top: 20px;
+  background-color: black;
+  color: $text-main;
+  border-color: $text-main;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  a {
+    color: $text-main;
+    text-decoration: none;
+  }
+}

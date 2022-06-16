@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  @extend .t-16-24;
+  @extend .t-normal;
+}
+
+span {
+  @extend .t-14-20;
+  @extend .t-normal;
+}
+
+small {
+  @extend .t-12-16;
+  @extend .t-normal;
+}
+
+h1 {
+  @extend .t-32-40;
+  @extend .t-bold;
+}
+
+h2 {
+  @extend .t-24-32;
+  @extend .t-bold;
+}
+
+h3 {
+  @extend .t-20-32;
+  @extend .t-bold;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.t-bold {
+  font-weight: 600;
+}
+
+.t-normal {
+  font-weight: 400;
+}
+
+.t-32-40 {
+  font-size: 2rem !important;
+  line-height: 2.5rem !important;
+}
+
+.t-24-32 {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
+.t-20-32 {
+  font-size: 1.25rem !important;
+  line-height: 2rem !important;
+}
+
+.t-16-24 {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+.t-14-20 {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.t-12-16 {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}

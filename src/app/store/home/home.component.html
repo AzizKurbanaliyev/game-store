@@ -1,0 +1,34 @@
+<h1 class="category-title t-center mt-48">FEATURED GAMES</h1>
+
+<div class="games-container flex flex-row-wrap mt-24">
+  <div *ngFor="let game of games | slice:0:6 " class="games-featured-card mr-16 mt-32 flex flex-align-items-center">
+    <div class="image-container">
+      <img [src]="game.header_image">
+    </div>
+    <div class="flex flex-column ml-24">
+      <h3 class="title t-center mb-8">{{game.name}}</h3>
+      <p class="price t-center">{{ game.final_price ? game.final_price.toString().slice(0,-2) + ' ₸' : 'FREE' }}</p>
+    </div>
+  </div>
+</div>
+
+<h1 class="category-title t-center mt-48">DEALS</h1>
+<div class="flex flex-row-wrap flex-justify-content-space-around mt-24">
+  <div *ngFor="let game of gameDeals" class="games-card flex flex-column flex-align-items-center mt-20">
+    <div class="image-container mb-16">
+      <img [src]="game.thumb">
+    </div>
+    <h4 class="title t-center mb-8">{{game.title}}</h4>
+    <div class="flex flex-align-items-center">
+      <p class="price ml-16 mr-8">{{ game.salePrice | currency}}</p>
+      <button
+        (click)="addGameToCart(game)"
+        mat-icon-button
+        color="basic"
+      >
+        <mat-icon aria-hidden="false">add_shopping_cart</mat-icon>
+      </button>
+    </div>
+    
+  </div>
+</div>
